@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        var i;
+
+        var print = function () {
+            console.log(i);
+        }
+
+        for (i = 0; i < 10; i++) {
+            setTimeout(print, 1000);
+        }
+
+        var j;
+
+        var print2 = function (temp) {
+            console.log(temp);
+        }
+
+        for (j = 0; j < 10; j++) {
+            setTimeout(function () {
+                console.log(j);
+            }(), 1000);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Objects</title>
+        <script>
+            function Person(name, age){
+                this.name = name;
+                this.age = age;
+                this.sayHello = function(){
+                    alert("Hello.. "+name);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var teja = new Person("Teja", 27);
+            var imran = new Person("Imran", 28);
+
+            document.write(teja.name+"</br>");
+            document.write(imran.name);
+            teja.sayHello();
+            imran.sayHello();
+        </script>
+    </body>
+</html>

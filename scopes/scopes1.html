@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        var a = 10;
+        function myFn(){
+            var b = a;
+            console.log(b)
+            console.log(c);
+            //if you use below lin it prints undefined becuase reading 'c' is done before assigning the value to it
+            var c = 30;
+
+            //if you use below line it gives error becuase you are reading variable without declaring it
+            c = 30; 
+            
+        }
+
+        myFn();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

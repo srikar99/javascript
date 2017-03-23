@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script>
+        function CreatePerson() {
+            var firstName = "Teja";
+            var lastName = 'P';
+            var obj = {
+                "getFirstName": function () {
+                    return firstName;
+                },
+                "getLastName": function () {
+                    return lastName;
+                }
+            };
+            return obj;
+        }
+        var person = CreatePerson();
+        console.log(person.getFirstName());
+        console.log(person.getLastName());
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <button>Button1</button>
+    <button>Button2</button>
+    <button>Button3</button>
+
+    <script>
+        var buttons = document.getElementsByTagName('button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].onclick = function () {
+                alert("button" + i);
+            }
+        }
+    </script>
+</body>
+
+</html>

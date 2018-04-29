@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+
+            var fooObjs = [];
+
+            function logStuff(obj){
+                if( typeof obj === "string"){
+                    console.log(obj);
+                }else if (typeof obj === "object"){
+                    for (item in obj){
+                        console.log("key: "+ item +" value: "+ obj[item]);
+                    }
+                }
+            }
+
+            function updateFoo(obj, log){
+                console.log("Pushing into foo array.")
+                fooObjs.push(obj);
+                log(obj)
+            }
+            updateFoo({"name":"Teja","email":"teja463@gmail.com"}, logStuff);
+
+
+        </script>
+    </head>
+    <body>
+        <h2> Call backs 2 demo</h2>
+    </body>
+</html>

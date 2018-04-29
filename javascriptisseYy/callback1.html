@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            function otherFunction(no, even, odd){
+                console.log("other function...");
+
+                /* 
+                If we did not recieved functions as paramters for even and odd parameters then invoking the
+                even function without checking type will give an error. 
+                So it is better to check the parameter passed before executing the callback function 
+                */
+
+                if (no%2 === 0){
+                    if (typeof even === "function"){
+                        even();
+                    }
+                }else{
+                    if (typeof odd === "function"){
+                        odd();
+                    }
+                }
+            }
+
+            function evenCallBack(){
+                console.log("Executing evenCallBack  function");
+            }
+
+            function oddCallBack(){
+                console.log("Executing oddCallBack function")
+            }
+
+            otherFunction(1,evenCallBack, oddCallBack);
+
+            otherFunction(2, evenCallBack, oddCallBack);
+
+            otherFunction(2,evenCallBack,2); 
+        </script>
+    </head>
+    <body>
+        <h2> Call back functions demo..</h2>
+    </body>
+</html>

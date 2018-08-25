@@ -4,8 +4,19 @@
     </head>
     <body>
         <h2>ES6 or ECMAScript2015 samples!!</h2>
-        <h3 id="template"></h3>
 
         <script src="./main.js" ></script>
+        
+        <script type="module" src="./modules_demo.js"></script>
+
+        <!-- We can also write modules in inline javascript. You have to tell the type as module-->
+        <script type="module">
+            import {User} from './module.js';
+            let pramod = new User("pramod", "pb@google.com");
+            console.log(pramod.getDetails());
+
+        </script>
     </body>
+
+
 </html>

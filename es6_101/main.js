@@ -83,7 +83,7 @@ function convertToUpper(word){
 let template = `
     <h3>This is a test template created by ${name} ${convertToUpper("test")} </h3>
 `
-document.getElementById("template").innerHTML = template;
+console.log(template)
 
 // Default parameter demo
 
